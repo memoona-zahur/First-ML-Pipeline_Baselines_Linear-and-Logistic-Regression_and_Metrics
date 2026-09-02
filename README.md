@@ -12,7 +12,7 @@ Week 06 · Day 3. A complete ML pipeline demonstrating honest baselines, proper 
 |---|---|---|---|
 | 1 | Linear regression reduces prediction error vs. baseline | RMSE: 10.30 → 7.06 (31% reduction) | Verified ✓ |
 | 2 | Linear regression explains substantial variance | R² = 0.5257 | Verified ✓ |
-| 3 | Study hours is strongest predictor | Coefficient: 2.033 pts/hr | Verified ✓ |
+| 3 | Class Section C has largest coefficient; study hours is strongest continuous predictor | Section C: 3.130; Study hours: 2.033 pts/hr | Verified ✓ |
 | 4 | 65.3% of students achieve distinction | Distinction rate: 0.653 | Verified ✓ |
 | 5 | Baseline accuracy is misleading on imbalanced data | Accuracy 65% but precision = 0.65 | Verified ✓ |
 | 6 | Logistic regression genuinely identifies distinction students | Accuracy: 77%, Recall: 83%, Precision: 81% | Verified ✓ |

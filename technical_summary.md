@@ -34,9 +34,10 @@ improvement. It explains about 53% of the variation in exam scores, meaning
 study hours, sleep, attendance, and class section together account for roughly
 half of why students score differently.
 
-**The strongest predictor** was study hours per week — each additional hour was
-associated with about 2 more points on the exam. Section C students scored
-about 3 points higher than Section A students (matching the dataset's design).
+**The largest coefficient** belonged to Section C (about +3 points), matching
+the dataset's design that gave Section C a bonus. **Among the continuous
+features**, study hours was the strongest predictor — each additional hour was
+associated with about 2 more points on the exam.
 
 ### 2. Predicting distinction students
 

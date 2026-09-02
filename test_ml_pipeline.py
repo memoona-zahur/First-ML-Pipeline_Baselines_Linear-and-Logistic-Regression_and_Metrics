@@ -150,8 +150,8 @@ r2_dummy = r2_score(y_test, y_pred_dummy)
 check(abs(r2_dummy) < 0.01, f"baseline R² is approximately 0.0 (got {r2_dummy:.6f})")
 check(rmse_dummy > 0, f"baseline RMSE is positive (got {rmse_dummy:.4f})")
 check(
-    abs(float(dummy_reg.constant_[0]) - y_train.mean()) < 0.001,
-    f"baseline predicts training mean ({float(dummy_reg.constant_[0]):.4f} ≈ {y_train.mean():.4f})"
+    abs(float(dummy_reg.constant_[0, 0]) - y_train.mean()) < 0.001,
+    f"baseline predicts training mean ({float(dummy_reg.constant_[0, 0]):.4f} ≈ {y_train.mean():.4f})"
 )
 
 # ---------------------------------------------------------------------------
