@@ -77,7 +77,7 @@ produces many false alarms. The real model's 77% accuracy with 83% recall and
   to be worth using.
 - **Self-audit**: Every number in the report was independently recomputed and
   verified against a fresh calculation.
-- **Automated verification**: A 64-check test suite validates the dataset,
+- **Automated verification**: A 71-check test suite validates the dataset,
   feature engineering, split, models, and metrics.
 
 ## Honest limitations

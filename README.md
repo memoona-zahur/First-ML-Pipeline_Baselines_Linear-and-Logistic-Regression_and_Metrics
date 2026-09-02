@@ -45,7 +45,7 @@ pip install -r requirements.txt
 # Regenerate dataset (spec-exact, seed=21)
 python3 generate_data.py
 
-# Run the verification suite (64 checks)
+# Run the verification suite (71 checks)
 python3 test_ml_pipeline.py
 
 # Open the notebook
@@ -64,7 +64,7 @@ The notebook is written as a **narrative report, not just code**. Every section 
 >
 > **What this tells us:** the narrative finding in prose
 
-You can read only the `##` section headers and the **"What this tells us"** paragraphs to get the full findings without ever looking at a chart or the code. Every number in those findings is produced by the code cell above it (never hand-typed) and is re-verified in the notebook's self-audit table (Section 13).
+You can read only the `##` section headers and the **"What this tells us"** paragraphs to get the full findings without ever looking at a chart or the code. Every number in those findings is produced by the code cell above it (never hand-typed) and is re-verified in the notebook's self-audit table (Section 14).
 
 ## Verified findings (recomputed from `data/students.csv`)
 
@@ -96,15 +96,3 @@ You can read only the `##` section headers and the **"What this tells us"** para
 - Linear assumptions — real relationships might be curved
 - Single train/test split — cross-validation would be more robust
 - Threshold sensitivity — different distinction thresholds change class balance
-
-## Reading the notebooks as a report
-
-Both notebooks are written as **narrative reports, not just code**. Every chart section follows the same pattern (mirroring the reference `eda-precision-lab` repo):
-
-> **Question:** the specific question the chart answers
->
-> ...the chart (built, saved, reopened)...
->
-> **What this tells us:** the narrative finding in prose
-
-You can read only the `##` section headers and the **"What this tells us"** paragraphs to get the full findings without ever looking at a chart or the code. Every number in those findings is produced by the code cell above it (never hand-typed) and is re-verified in each notebook's self-audit table (Section 13).
