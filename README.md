@@ -87,6 +87,7 @@ You can read only the `##` section headers and the **"What this tells us"** para
 - **Requirements mapping** — every spec requirement mapped to where it's delivered
 - **Dataset SHA-256 fingerprint** for reproducibility verification
 - **Honest limitations documented** — causation, generalization, features, linearity, split, threshold
+- **No arbitrary chart colors** — every multi-color choice (coefficient sign, worse/better performer) is documented in the notebook; the residual chart uses a single color because it has no categorical distinction to encode
 
 ## Limitations (honest)
 

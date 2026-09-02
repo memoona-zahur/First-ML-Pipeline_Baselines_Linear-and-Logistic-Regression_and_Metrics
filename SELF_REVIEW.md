@@ -56,9 +56,10 @@ delivered artifacts. Verification source: `test_ml_pipeline.py`
 3. Every decision has "why" reasoning — ✓
 4. Every chart has title + labeled axes — ✓
 5. Charts are matched to questions — ✓
-6. Honest limitations documented — ✓
-7. Technical summary understandable by non-technical reader — ✓
-8. Git: feature branch, meaningful commits, pushed — ✓
+6. No arbitrary colors — every multi-color choice has a stated reason (coefficient sign, worse/better performer); where no categorical distinction exists, a single color is used (residual chart) — ✓
+7. Honest limitations documented — ✓
+8. Technical summary understandable by non-technical reader — ✓
+9. Git: feature branch, meaningful commits, pushed — ✓
 
 ## Adversarial Self-Questions
 
