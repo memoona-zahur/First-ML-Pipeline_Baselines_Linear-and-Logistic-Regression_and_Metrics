@@ -50,7 +50,17 @@ identifying distinction students: 83% recall (caught 83% of actual distinction
 students) and 81% precision (81% of predicted distinctions were correct). This
 demonstrates why accuracy alone can be misleading on imbalanced data.
 
-### 3. Why accuracy alone is misleading
+### 3. Where the model errs (a forward look at error analysis)
+
+Beyond "how much" the model errs (RMSE), we checked *where* it errs. The
+residuals — the actual-minus-predicted differences — average essentially zero
+and show **no pattern** against predicted scores or any individual feature.
+This is the signature of a well-specified model: it is not systematically
+over- or under-predicting for any group of students. This check seeds the
+deeper error analysis that comes next, and flags a red flag early if the model
+had a leftover blind spot.
+
+### 4. Why accuracy alone is misleading
 
 The baseline achieved 65% accuracy by always predicting the majority class
 (distinction). This looks reasonable at first glance, but the model has learned

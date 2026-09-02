@@ -257,6 +257,7 @@ expected_charts = [
     "chart_coefficients.png",
     "chart_classification_comparison.png",
     "chart_confusion_matrix.png",
+    "chart_residual_analysis.png",
 ]
 
 for chart_name in expected_charts:

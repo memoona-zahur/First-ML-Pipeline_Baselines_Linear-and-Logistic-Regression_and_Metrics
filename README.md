@@ -23,10 +23,10 @@ Week 06 · Day 3. A complete ML pipeline demonstrating honest baselines, proper 
 
 | File | Contents |
 |---|---|
-| `ml_pipeline.ipynb` | Full pipeline: data generation → feature engineering → split → baselines → models → metrics → self-audit → limitations |
+| `ml_pipeline.ipynb` | Full pipeline: data generation → feature engineering → split → baselines → models → metrics → residual analysis → self-audit → limitations |
 | `data/students.csv` | 600 × 6 students dataset |
 | `generate_data.py` | Dataset generator (exact assignment spec, `seed=21`) |
-| `test_ml_pipeline.py` | 64-check automated verification suite |
+| `test_ml_pipeline.py` | 71-check automated verification suite |
 | `charts/` | All saved PNG figures from the notebook |
 | `technical_summary.md` | Standalone plain-language write-up for non-technical readers |
 | `SELF_REVIEW.md` | Requirement-by-requirement verification of the whole lab |
@@ -77,8 +77,9 @@ You can read only the `##` section headers and the **"What this tells us"** para
 
 ## Additional work beyond requirements
 
-- **Automated verification suite** — 64 pytest-style checks that validate dataset, feature engineering, split, models, and metrics
+- **Automated verification suite** — 71 pytest-style checks that validate dataset, feature engineering, split, models, and metrics
 - **Self-audit table** — every claimed number independently recomputed and verified
+- **Residual analysis** — examines WHERE the regression model errs, not just how much (previews Thursday's error-analysis theme; confirms no leftover pattern)
 - **Confusion matrix visualization** — shows the model's error types
 - **Feature coefficient analysis** — interpretable model coefficients with chart
 - **Regression comparison charts** — visual RMSE and R² comparison
